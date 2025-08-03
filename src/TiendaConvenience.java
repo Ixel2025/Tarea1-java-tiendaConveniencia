@@ -79,7 +79,8 @@ public class TiendaConvenience {
                 case 4:
                     // Salir del sistema
                     salir = true;
-                    System.out.println("Ha sido un gusto atenderle. Le esperamos pronto :)");
+                    System.out.println("Ha sido un gusto atenderle. Le esperamos pronto :)" +
+                            "");
                     break;
 
                 default:
