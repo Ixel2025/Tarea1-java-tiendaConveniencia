@@ -34,7 +34,7 @@ public class TiendaConvenience {
                     // En la primera opcion se muestran los productos disponibles
                     System.out.println("\nProductos disponibles:");
                     for (int i = 0; i < productos.length; i++) {
-                        System.out.printf("%d. %s - $%.2f%n",
+                        System.out.printf("%d. %s - L.%.2f%n",
                                 (i+1), productos[i], precios[i]);
                     }
                     break;
@@ -43,7 +43,7 @@ public class TiendaConvenience {
                     // En la segunda opcion pueden seleccionar uno de los productos y agregarlos al carrito
                     System.out.println("\nSeleccione un producto (número):");
                     for (int i = 0; i < productos.length; i++) {
-                        System.out.printf("%d. %s - $%.2f%n",
+                        System.out.printf("%d. %s - L.%.2f%n",
                                 (i+1), productos[i], precios[i]);
                     }
                     System.out.print("Opción: ");
@@ -68,11 +68,11 @@ public class TiendaConvenience {
                         System.out.println("\n--- CARRITO DE COMPRAS ---");
                         for (int i = 0; i < itemsEnCarrito; i++) {
                             int productoIndex = carrito[i];
-                            System.out.printf("%s - $%.2f%n",
+                            System.out.printf("%s - L.%.2f%n",
                                     productos[productoIndex], precios[productoIndex]);
                             total += precios[productoIndex];
                         }
-                        System.out.printf("TOTAL A PAGAR: $%.2f%n", total);
+                        System.out.printf("TOTAL A PAGAR: L.%.2f%n", total);
                     }
                     break;
 
